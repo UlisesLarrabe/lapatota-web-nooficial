@@ -1,0 +1,47 @@
+---
+import MenuIcon from "src/icons/MenuIcon.astro";
+import MessageIcon from "src/icons/MessageIcon.astro";
+import LinkHeader from "./LinkHeader.astro";
+---
+
+<header
+  class="fixed bg-transparent w-full flex justify-center items-center py-8 z-10"
+>
+  <div
+    class="bg-navbar flex justify-center items-center overflow-visible max-h-12 rounded-full"
+  >
+    <details class="dropdown">
+      <summary
+        class="btn m-1 bg-transparent border-0 hover:bg-header-gradient rounded-full"
+      >
+        <MenuIcon />
+      </summary>
+      <ul
+        class="menu dropdown-content bg-base-100 rounded-box z-[1] w-80 p-2 shadow flex justify-center items-center bg-header-gradient"
+      >
+        <li class="w-full">
+          <LinkHeader name="Servicios" to="#services" />
+        </li>
+        <li class="w-full">
+          <LinkHeader name="Diseño" to="#design" />
+        </li>
+        <li class="w-full">
+          <LinkHeader name="Sitio Web" to="#webs" />
+        </li>
+        <li class="w-full">
+          <LinkHeader name="Marketing Digital" to="#marketing" />
+        </li>
+        <li class="w-full">
+          <LinkHeader name="Contacto" to="#contact" />
+        </li>
+      </ul>
+    </details>
+    <img src="/logo.webp" alt="Logo" class="w-44 z-10" />
+    <a
+      href="#contact"
+      class="btn bg-transparent border-0 hover:bg-header-gradient text-white rounded-full"
+    >
+      <MessageIcon />
+    </a>
+  </div>
+</header>

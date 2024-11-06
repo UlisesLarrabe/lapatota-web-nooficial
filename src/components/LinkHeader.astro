@@ -1,0 +1,14 @@
+---
+interface Props {
+  name: string;
+  to: string;
+}
+
+const { name, to } = Astro.props;
+---
+
+<a
+  href={to}
+  class="w-full flex justify-center text-center font-bold text-white text-xl"
+  >{name}</a
+>
