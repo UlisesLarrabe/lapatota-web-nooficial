@@ -1,0 +1,46 @@
+---
+import ArticleServices from "./ArticleServices.astro";
+
+const SERVICES = [
+  {
+    title: "Diseño",
+    description:
+      "Diseñamos marcas y piezas efectivas y atractivas, con especial atención en la tipografía y los detalles. Nos enfocamos en cumplir objetivos y tiempos de trabajo acordados.",
+    services: ["Identidad / Logo", "Creatividad", "Ilustración", "Video / Vj"],
+    image: {
+      src: "/design-article.webp",
+      alt: "Palabra Diseño",
+    },
+  },
+  {
+    title: "Digital",
+    description:
+      "Nos apasiona internet. Esta red dinámica es una fuente inagotable de información y estadísticas, sobre la que construimos estrategias online a la medida de cada cliente.",
+    services: [
+      "Sitio Web",
+      "Redes sociales",
+      "Marketing Digital",
+      "Contenido Web",
+    ],
+    image: {
+      src: "/digital-article.webp",
+      alt: "Palabra Digital",
+    },
+  },
+];
+---
+
+<section
+  class="bg-[#000000] gap-40 flex justify-center items-center p-2 md:flex-col w-full flex-wrap"
+>
+  {
+    SERVICES.map((service) => (
+      <ArticleServices
+        title={service.title}
+        description={service.description}
+        image={service.image}
+        services={service.services}
+      />
+    ))
+  }
+</section>
