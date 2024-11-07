@@ -1,0 +1,14 @@
+---
+interface Props {
+  to: string;
+  isLeaving?: boolean;
+}
+
+const { to, isLeaving } = Astro.props;
+---
+
+<li class="bg-contact-button rounded-full p-1">
+  <a target={isLeaving ? "_blank" : ""} class="w-10 h-10 text-white" href={to}
+    ><slot />
+  </a>
+</li>

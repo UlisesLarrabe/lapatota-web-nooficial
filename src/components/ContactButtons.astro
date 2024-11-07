@@ -1,0 +1,16 @@
+---
+import EmailIcon from "@icons/EmailIcon.astro";
+import ButtonContact from "src/components/ButtonContact.astro";
+import InstagramIcon from "@icons/InstagramIcon.astro";
+---
+
+<aside class="fixed right-3 z-50 bottom-[50%]">
+  <ul class="flex flex-col gap-2">
+    <ButtonContact to="#contact">
+      <EmailIcon />
+    </ButtonContact>
+    <ButtonContact isLeaving={true} to="https://www.instagram.com/soylapatota/">
+      <InstagramIcon />
+    </ButtonContact>
+  </ul>
+</aside>
