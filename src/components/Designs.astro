@@ -64,9 +64,13 @@ const IMAGES = [
 ];
 ---
 
-<section class="bg-image-section pt-[186px] bg-repeat-x w-full">
-  <div class="bg-design-section w-full px-2 md:px-32 flex flex-col gap5">
-    <header class="w-full text-[#023168]">
+<section
+  class="bg-image-section pt-[186px] bg-repeat-x w-full flex flex-col justify-center items-center"
+>
+  <div
+    class="bg-design-section w-full px-2 md:px-32 flex flex-col gap-5 justify-center items-center"
+  >
+    <header class="w-full text-[#023168] max-w-[1100px]">
       <img src="/logo-word.webp" alt="Palabra Logo" />
       <div class="flex flex-col gap-5">
         <h2 class="text-3xl font-semibold">
@@ -81,7 +85,7 @@ const IMAGES = [
         </p>
       </div>
     </header>
-    <main class="pt-5 flex flex-col gap-5">
+    <main class="pt-5 flex flex-col gap-5 max-w-[1100px]">
       <div class="flex gap-5 flex-wrap">
         <BadgeDesign text="Diseño de logo" />
         <BadgeDesign text="Identidad corporativa" />
@@ -89,7 +93,7 @@ const IMAGES = [
         <BadgeDesign text="Diseño de Poster" />
         <BadgeDesign text="ilustración" />
       </div>
-      <div class="flex flex-wrap gap-1">
+      <div class="flex flex-wrap gap-1 justify-center items-center">
         {
           IMAGES.map((image) => (
             <img
