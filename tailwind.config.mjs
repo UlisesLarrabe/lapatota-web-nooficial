@@ -7,7 +7,8 @@ export default {
 			colors:{
 				"navbar": "#0D0D7F",
 				"design":"#35a4d0",
-				"digital":"#dcb3ec"
+				"digital":"#dcb3ec",
+				"pinky":"#EF116C"
 			},
 			backgroundImage: {
         'header-gradient': 'linear-gradient(rgba(53, 164, 208, 0.9), rgba(53, 164, 208, 0.5))',
@@ -19,6 +20,7 @@ export default {
 				"digital-card":"linear-gradient(-45deg, #FF5FC6, #C40062, #C40062)",
 				"design-section":"linear-gradient(#14738D, #3DA3CB, #fff)",
 				"image-section":"url('/design-section.webp')",
+				"web-section":"url('/web-section.webp')",
       },
 		},
 	},

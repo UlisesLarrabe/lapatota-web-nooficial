@@ -1,0 +1,45 @@
+---
+import BadgeDesign from "./BadgeDesign.astro";
+---
+
+<section
+  class="bg-web-section pt-[186px] bg-repeat-x w-full flex flex-col gap-5 justify-center items-center"
+>
+  <div
+    class="bg-black w-full px-2 md:px-32 flex flex-col gap-5 justify-center items-center"
+  >
+    <header class="md:w-[700px] lg:w-[1100px] flex flex-col gap-4">
+      <img
+        class="h-auto w-[522px]"
+        src="/sitioweb-logo.webp"
+        alt="Logo sitio web"
+      />
+      <h2 class="text-pinky text-xl md:text-3xl font-semibold">
+        Sitio Web + Contenido + Desarrollo
+      </h2>
+      <p class="text-pinky text-sm leading-tight">
+        Planificamos y desarrollamos sitios web estáticos, administrables, o a
+        medida. Nos especializamos en diferentes plataformas de autogestión.
+        Brindamos un servicio integral que incluye: identificación de las
+        necesidades del cliente, diseño y maquetado, desarrollo del contenido,
+        programación y seguimiento.
+      </p>
+    </header>
+    <main class="flex flex-col md:w-[700px] lg:w-[1100px]">
+      <div class="flex flex-wrap gap-1 md:gap-3">
+        <BadgeDesign classString="bg-[#EF116C]" text="Diseño de Sitios Web" />
+        <BadgeDesign
+          classString="bg-[#EF116C]"
+          text="Desarrollo de Páginas Web"
+        />
+        <BadgeDesign classString="bg-[#EF116C]" text="Responsive" />
+        <BadgeDesign classString="bg-[#EF116C]" text="Usabilidad" />
+        <BadgeDesign classString="bg-[#EF116C]" text="HTML + CSS" />
+        <BadgeDesign classString="bg-[#EF116C]" text="Smartphone" />
+        <BadgeDesign classString="bg-[#EF116C]" text="Wordpress" />
+        <BadgeDesign classString="bg-[#EF116C]" text="Backend" />
+      </div>
+      <img src="/webs-examples.webp" alt="Ejemplo de webs realizadas" />
+    </main>
+  </div>
+</section>

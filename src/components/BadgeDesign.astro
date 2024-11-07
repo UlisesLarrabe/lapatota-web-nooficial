@@ -1,9 +1,10 @@
 ---
 interface Props {
   text: string;
+  classString: string;
 }
 
-const { text } = Astro.props;
+const { text, classString } = Astro.props;
 ---
 
-<span class="bg-[#023168] text-white p-2 rounded-md">{text}</span>
+<span class={`${classString} text-white p-2 rounded-md`}>{text}</span>
