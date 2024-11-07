@@ -14,6 +14,7 @@ export default {
 				"hero-gradient":"linear-gradient(#5F6CB3, #738EAB, #709DB8, #E49EA9, #FA9243)",
 				"stars":"url('/stars.webp')",
 				"city":"url('/city.webp')",
+				"contact-button":"linear-gradient(to bottom, #E900BD, #EF116C, #EF116C)"
       },
 		},
 	},
