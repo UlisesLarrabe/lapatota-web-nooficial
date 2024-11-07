@@ -1,0 +1,105 @@
+---
+import BadgeDesign from "./BadgeDesign.astro";
+const IMAGES = [
+  {
+    src: "/design-1.webp",
+    alt: "Logo Eliot Ness",
+  },
+  {
+    src: "/design-2.webp",
+    alt: "Logo Doppelfass",
+  },
+  {
+    src: "/design-3.webp",
+    alt: "Logo El Jardin De Las Delicias",
+  },
+  {
+    src: "/design-4.webp",
+    alt: "Logo Engament",
+  },
+  {
+    src: "/design-5.webp",
+    alt: "Logo Geofans",
+  },
+  {
+    src: "/design-6.webp",
+    alt: "Logo Lincoln",
+  },
+  {
+    src: "/design-7.webp",
+    alt: "Logo La Nube",
+  },
+  {
+    src: "/design-8.webp",
+    alt: "Logo babu",
+  },
+  {
+    src: "/design-9.webp",
+    alt: "Logo Vail",
+  },
+  {
+    src: "/design-10.webp",
+    alt: "Logo Puerto Economico",
+  },
+  {
+    src: "/design-11.webp",
+    alt: "Logo Nabhen",
+  },
+  {
+    src: "/design-12.webp",
+    alt: "Logo Rinobox",
+  },
+  {
+    src: "/design-13.webp",
+    alt: "Logo Tap Craft",
+  },
+  {
+    src: "/design-14.webp",
+    alt: "Logo La Taqueria",
+  },
+  {
+    src: "/design-15.webp",
+    alt: "Logo Santa Milonguita",
+  },
+];
+---
+
+<section class="bg-image-section pt-[186px] bg-repeat-x w-full">
+  <div class="bg-design-section w-full px-2 md:px-32 flex flex-col gap5">
+    <header class="w-full text-[#023168]">
+      <img src="/logo-word.webp" alt="Palabra Logo" />
+      <div class="flex flex-col gap-5">
+        <h2 class="text-3xl font-semibold">
+          Identidad / Logo / Creatividad / Diseño
+        </h2>
+        <p class="font-semibold leading-tight">
+          Diseñamos marcas sólidas y directas, que comunican y atraen, mediante
+          un proceso de trabajo integral que involucra al cliente desde el
+          comienzo. Realizamos un análisis previo donde se estudian factores
+          externos y rasgos particulares de cada marca, para tomar decisiones
+          fundamentadas.
+        </p>
+      </div>
+    </header>
+    <main class="pt-5 flex flex-col gap-5">
+      <div class="flex gap-5 flex-wrap">
+        <BadgeDesign text="Diseño de logo" />
+        <BadgeDesign text="Identidad corporativa" />
+        <BadgeDesign text="Campañas de comunicación" />
+        <BadgeDesign text="Diseño de Poster" />
+        <BadgeDesign text="ilustración" />
+      </div>
+      <div class="flex flex-wrap gap-1">
+        {
+          IMAGES.map((image) => (
+            <img
+              class="w-[130px] h-[130px]  md:w-[215px] md:h-[215px] object-cover"
+              src={image.src}
+              alt={image.alt}
+            />
+          ))
+        }
+      </div>
+    </main>
+  </div>
+</section>

@@ -16,7 +16,9 @@ export default {
 				"city":"url('/city.webp')",
 				"contact-button":"linear-gradient(to bottom, #E900BD, #EF116C, #EF116C)",
 				"design-card":"linear-gradient(-45deg, #35A4D0, #09667C, #09667C)",
-				"digital-card":"linear-gradient(-45deg, #FF5FC6, #C40062, #C40062)"
+				"digital-card":"linear-gradient(-45deg, #FF5FC6, #C40062, #C40062)",
+				"design-section":"linear-gradient(#14738D, #3DA3CB, #fff)",
+				"image-section":"url('/design-section.webp')",
       },
 		},
 	},
