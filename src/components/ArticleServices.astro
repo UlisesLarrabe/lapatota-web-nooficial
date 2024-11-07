@@ -19,8 +19,8 @@ const digitalServices = "hover:text-[#35A4D0] bg-[#35A4D0] ";
 ---
 
 <article class="h-[500px] w-[500px]">
-  <header class="-mb-32 -ml-5">
-    <img src={image.src} alt={image.alt} />
+  <header class="relative">
+    <img src={image.src} class="absolute -top-36" alt={image.alt} />
   </header>
   <main
     class={` h-full flex justify-center items-center flex-col gap-4 border-b-4 border-t-4 ${title === "Digital" ? digitalClass : designClass}`}
