@@ -1,5 +1,6 @@
 ---
 import BadgeDesign from "./BadgeDesign.astro";
+import CarouselItem from "@components/CarouselItem.astro";
 const IMAGES = [
   {
     src: "/design-1.webp",
@@ -105,5 +106,45 @@ const IMAGES = [
         }
       </div>
     </main>
+    <footer class="w-full border-t-2">
+      <div class="carousel rounded-box gap-2 w-full -mt-3">
+        <CarouselItem>
+          <img src="/slider-1.webp" alt="Afiche Kuff" />
+        </CarouselItem>
+        <CarouselItem>
+          <img src="/slider-2.webp" alt="Afiche Killer Larrosa" />
+        </CarouselItem>
+        <CarouselItem>
+          <img src="/slider-3.webp" alt="Afiche Mazinger" />
+        </CarouselItem>
+        <CarouselItem>
+          <img src="/slider-4.webp" alt="Afiche Enzo" />
+        </CarouselItem>
+        <CarouselItem>
+          <img src="/slider-5.webp" alt="Afiche Ortega" />
+        </CarouselItem>
+        <CarouselItem>
+          <img src="/slider-6.webp" alt="Afiche Pity" />
+        </CarouselItem>
+        <CarouselItem>
+          <img src="/slider-7.webp" alt="Afiche Cuchillo electrico" />
+        </CarouselItem>
+        <CarouselItem>
+          <img src="/slider-8.webp" alt="Primer afiche Punk is Back" />
+        </CarouselItem>
+        <CarouselItem>
+          <img src="/slider-9.webp" alt="Segundo afiche Punk is Back" />
+        </CarouselItem>
+        <CarouselItem>
+          <img src="/slider-10.webp" alt="Afiche Darth Vader" />
+        </CarouselItem>
+        <CarouselItem>
+          <img src="/slider-11.webp" alt="Afiche Iorio" />
+        </CarouselItem>
+        <CarouselItem>
+          <img src="/slider-12.webp" alt="Afiche Oveja" />
+        </CarouselItem>
+      </div>
+    </footer>
   </div>
 </section>
